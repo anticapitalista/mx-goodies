@@ -1,0 +1,2 @@
+bin/*		/usr/local/bin 
+fstrim-mx       /etc/cron.weekly      
