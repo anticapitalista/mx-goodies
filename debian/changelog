@@ -1,3 +1,10 @@
+mx-goodies (0.1.1) unstable; urgency=low 
+ 
+  * Added guess-hwclock script
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 04 Dec 2015 14:31:00 +0200
+
+
 mx-goodies (0.1.0) unstable; urgency=low 
  
   * Initial Release.
