@@ -1,4 +1,11 @@
-mx-goodies (0.1.1) unstable; urgency=low 
+mx-goodies (0.1.2) mx; urgency=low 
+ 
+  * Added yad script to hide annoying messages
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 22 Dec 2015 22:56:00 +0200
+
+
+mx-goodies (0.1.1) mx; urgency=low 
  
   * Added guess-hwclock script
 
