@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="BroadcomStartup-1.0 (Oct. 14, 2015)"
+version="BroadcomStartup-1.1 (Mar. 16, 2016)"
 
 # Check that user is root.
 [ $(id -u) -eq 0 ] || { echo -e $"\n\t You need to be root!\n" ; exit 1 ; }
@@ -112,19 +112,22 @@ else
       4307|4318|4319|4321|4322|4350|43a9|43aa|a8d6|a8db) b43Unblacklist
                                                          ;;
 
+                                              4311|4312) b43Unblacklist
+                                                         ;;
+
                                          4301|4306|4325) b43legacyUnblacklist
                                                          ;;
 
                                                    4320) #test to see if BCM4306/2 or BCM4306/3
 
                                                          #assuming that the first line of the lspci -vnn report for a BCM4306/2 device ends with "(rev 02)", can someone verify?
-                                                         lspci -vnn -d 14e4: | head -n1 | cut -f2- -d] | cut -c3- | grep -q BCM4306.*"(rev 02)$"
+                                                         lspci -vnn -d 14e4:4320 | head -n1 | cut -f2- -d] | cut -c3- | grep -q BCM4306.*"(rev 02)$"
                                                          if [ "$?" -eq 0 ]; then
                                                            b43legacyUnblacklist
                                                          fi
 
                                                          #assuming that the first line of the lspci -vnn report for a BCM4306/3 device ends with "(rev 03)", can someone verify?
-                                                         lspci -vnn -d 14e4: | head -n1 | cut -f2- -d] | cut -c3- | grep -q BCM4306.*"(rev 03)$"
+                                                         lspci -vnn -d 14e4:4320 | head -n1 | cut -f2- -d] | cut -c3- | grep -q BCM4306.*"(rev 03)$"
                                                          if [ "$?" -eq 0 ]; then
                                                            b43Unblacklist
                                                          fi
@@ -133,13 +136,13 @@ else
                                                    4324) #test to see if BCM4306 or BCM4306/6
 
                                                          #assuming that the first line of the lspci -vnn report for a BCM4306 device ends with "[14e4:4324]", can someone verify?
-                                                         lspci -vnn -d 14e4: | head -n1 | cut -f2- -d] | cut -c3- | grep -q BCM4306.*"\[14e4:4324\]$"
+                                                         lspci -vnn -d 14e4:4324 | head -n1 | cut -f2- -d] | cut -c3- | grep -q BCM4306.*"\[14e4:4324\]$"
                                                          if [ "$?" -eq 0 ]; then
                                                            b43legacyUnblacklist
                                                          fi
 
                                                          #assuming that the first line of the lspci -vnn report for a BCM4306/6 device ends with "(rev 06)", can someone verify?
-                                                         lspci -vnn -d 14e4: | head -n1 | cut -f2- -d] | cut -c3- | grep -q BCM4306.*"(rev 06)$"
+                                                         lspci -vnn -d 14e4:4324 | head -n1 | cut -f2- -d] | cut -c3- | grep -q BCM4306.*"(rev 06)$"
                                                          if [ "$?" -eq 0 ]; then
                                                            b43Unblacklist
                                                          fi
