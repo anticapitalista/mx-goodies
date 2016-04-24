@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="BroadcomStartup-1.1 (Mar. 16, 2016)"
+version="BroadcomStartup-1.2 (Apr. 24, 2016)"
 
 # Check that user is root.
 [ $(id -u) -eq 0 ] || { echo -e $"\n\t You need to be root!\n" ; exit 1 ; }
