@@ -112,7 +112,7 @@ else
       4307|4318|4319|4321|4322|4350|43a9|43aa|a8d6|a8db) b43Unblacklist
                                                          ;;
 
-                                              4311|4312) b43Unblacklist
+                                         4311|4312|4328) b43Unblacklist
                                                          ;;
 
                                          4301|4306|4325) b43legacyUnblacklist
