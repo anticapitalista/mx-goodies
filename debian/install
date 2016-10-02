@@ -1,3 +1,4 @@
-bin/*		/usr/local/bin 
-fstrim-mx       /etc/cron.weekly      
-java.desktop	/usr/share/applications
+bin/* 			usr/local/bin 
+fstrim-mx       	etc/cron.weekly      
+java.desktop		usr/share/applications
+Py-Loader.desktop 	usr/share/applications
