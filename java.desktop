@@ -3,6 +3,7 @@ Name=Java
 Comment=Java
 GenericName=Java
 Keywords=java
+Icon=java
 Exec=java -jar %f
 Terminal=false
 X-MultipleArgs=false

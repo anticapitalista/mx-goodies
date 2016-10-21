@@ -1,8 +1,8 @@
-mx-goodies (0.1.4+nmu1) UNRELEASED; urgency=medium
+mx-goodies (0.1.5) mx; urgency=medium
 
   * Added java.desktop and Py-Loader.desktop
 
- -- anticapitalista <antix@operamail.com>  Thu, 29 Sep 2016 19:18:41 +0300
+ -- anticapitalista <antix@operamail.com>  Fri, 21 Oct 2016 15:15:59 +0300
 
 mx-goodies (0.1.4) mx; urgency=medium
 
