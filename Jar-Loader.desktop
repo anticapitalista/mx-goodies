@@ -10,3 +10,4 @@ X-MultipleArgs=false
 Type=Application
 MimeType=application/x-java-archive
 StartupNotify=true
+NoDisplay=True

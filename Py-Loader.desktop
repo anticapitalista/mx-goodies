@@ -6,3 +6,4 @@ Icon= /usr/share/pixmaps/python.xpm
 Categories=Application;
 Exec=python %f
 Terminal=false
+NoDisplay=True
