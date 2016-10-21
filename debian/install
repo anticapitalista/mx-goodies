@@ -1,4 +1,4 @@
 bin/* 			usr/local/bin 
 fstrim-mx       	etc/cron.weekly      
-java.desktop		usr/share/applications
+Jar-Loader.desktop	usr/share/applications
 Py-Loader.desktop 	usr/share/applications
