@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 mx-goodies (0.1.5) mx; urgency=medium
 
   * Added java.desktop and Py-Loader.desktop
 
  -- anticapitalista <antix@operamail.com>  Fri, 21 Oct 2016 15:15:59 +0300
 
-=======
->>>>>>> fac187ff77889d0e6f01d42fb52f827b84f9223b
 mx-goodies (0.1.4) mx; urgency=medium
 
   * BroadcomStartup updated
